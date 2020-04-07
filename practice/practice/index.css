@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1600px;
+    height: 1200px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    height: 100%; 
+    width: 100%;
+    background-image: url(./images/header.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}  
+
+.headerSlogan{
+    font-size: 40px; 
+    position: relative;
+    top: 150px;
+}
+
+.headerDescribe{
+    width: 40%;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.ready{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.readyTitle{
+    font-size: small;
+    margin: 50px;
+}
+
+.readyText{
+    font-size: 40px;
+    width:900px;
+    text-align: center;
+}
+
+.readyDescribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstPart{
+    display: flex;
+    margin: 80px;
+}
+
+.secondPart{
+    display: flex;
+}
+
+.readyContainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.iconContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.iconTitle{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.iconText{
+    width: 500px;
+}
+
+.supportive{
+    height: 90%;
+    background-color: seagreen;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(./images/third/images/third_02.png);
+}
+
+.supportiveLeft{
+    height: 60%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.topText{
+    font-size: 30px;
+    color: white;
+    font-weight: 5px;
+    width: 300px;
+}
+
+.bottomText{
+    color: white;    
+    width: 400px;
+}
+
+.buttonGroup{
+    display: flex;
+}
+
+.buttonLeft{
+    width: 300px;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.buttonRight{
+    width: 300px;
+    height: 50px;  
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.supportiveRight{
+    height: 80%; 
+    width: 550px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.rightCircle{
+    height: 5px;
+    width: 5px;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.rightInner{
+    height: 90%;
+    width: 500px;
+    background-image: url(./images/third/images/前端学院设计图_03.png);
+    background-size: 100% 100%;
+}
+
+.try{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tryHeader{
+    font-size: 35px;
+    margin: 50px;
+}
+
+.tryContainer{
+    display: flex;
+}
+
+.tryContainer img{
+    margin-bottom: 30px;
+}
+
+.singleton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.pontland{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.natural{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.natural img{
+    height: 250px;
+    width: 500px;
+}
+
+.naturalTop{
+    display: flex;
+    margin: 30px;
+}
+
+.naturalTop .naturalContainer{
+    margin-left: 50px;
+}
+
+.naturalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+.naturalSlogan{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.naturalBottom{
+    display: flex;
+    margin: 30px;
+}
+
+.naturalBottom .naturalContainer{
+    margin-right: 50px;
+}
+
+.crew{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.crewText{
+    text-align: center;
+    width: 720px;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.crew img{
+    height: 200px;
+    width: 300px;
+}
+
+.crewImgContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.crewImgContainer div{
+    height: 200px;
+    width: 300px;
+    background-size: 100% 100%;
+}
+
+.crewMask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    background-color: black;
+    opacity: 0;
+}
+
+.crewMask:hover{
+    opacity: 0.6;
+}
+
+.crewMask img{
+    height: 40px;   
+    width: 40px;
+    margin: 10px;
+}
+
+.crewMaskSlogan{
+    color: white;
+    font-weight: bold;
+}
+
+.crewMaskText{
+    color: white;
+    font-size: 10px;
+    margin: 15px;
+}
+
+.crewImg1{
+    background-image: url(./images/sixth/Background1.png);
+}
+
+.crewImg2{
+    background-image: url(./images/sixth/Background2.png);
+}
+
+.crewImg3{
+    background-image: url(./images/sixth/Background3.png);
+}
+
+.crewImg4{
+    background-image: url(./images/sixth/Background4.png);
+}
+
+.contact{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    height: 500px;
+    width: 400px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form input{
+    height: 20px;
+    width: 230px;
+}
+
+.form textarea,input{
+    padding: 10px;
+}
+
+.contactSubmit{
+    height: 40px;
+    width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.contactRight{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+.contactRightSlogan{
+    font-size: 35px;
+}
+
+.contactRightContent{
+    display: grid;
+    grid-template-columns:30px auto;
+    align-items: center;
+}
+
+.footer{
+    height: 60%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.footerTextContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTextContainer span{
+    margin: 15px;
+}
+
+.footerTextContainer div{
+    margin: 15px;
+}
+
+.footerTextContainer img{
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.fontCss1{
+    opacity: 0.3;
+}
+
+.fontCss2{
+    opacity: 0.7;
+}
+
+.especial{
+    margin-top: -80px;
+}
+
+* div{
+    overflow: hidden;
+}
