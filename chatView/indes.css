@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.bluePart{
+    width: 400px;
+    height: 100%;
+}
+
+.sideBar{
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1d2531;
+}
+
+.features{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.features div{
+    height: 60px;
+    width: 60px;
+}
+
+.flight{
+    background-image: url(./asset/sideUI/Item1.png);
+}
+
+.rocket{
+    background-image: url(./asset/sideUI/Item2.png);
+}
+
+.game{
+    background-image: url(./asset/sideUI/Item3.png);
+}
+
+.add{
+    background-image: url(./asset/sideUI/AddApp.png);
+}
+
+.settingPart{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.settingPart div{
+    height: 16px;
+    width: 16px;
+}
+
+.grid{
+    background-image: url(./asset/sideUI/Grid.png);
+}
+
+.setting{
+    background-image: url(./asset/sideUI/Settings.png);
+}
+
+
+.options{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    background-color: #222c3c;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    color: #b7c0cd;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin: 10px 30px 0 30px;
+}
+
+.itemBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstItem{
+    color: #4c5769;
+}
+
+.bubble{
+    height: 20px;
+    width: 30px;
+    background-color: #289cf4;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+.warning{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.line{
+    height: 1px; 
+    width: 100%; 
+    background-color: #2a3547;
+    margin-bottom: -25px;
+}
+
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin: 0 30px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progressBar{
+    width: 100%;
+    height: 5px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    background-color: #2d3848;
+    overflow: hidden;
+}
+
+.progress{
+    width: 20%;
+    height: 100%;
+    background-color: #8d73e4;
+}
+
+.whitePart{
+    /* height: 2000px; */
+    width: 100%;
+}
+
+.header{
+    height: 10vh;
+    width: calc(100% - 400px);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slogan{
+    line-height: calc(10vh - 40px);
+    margin: 20px;
+    font-size: 25px;
+}
+
+.photo{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoText{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.content{
+    height: 90vh;
+    width: 100%;
+    /* position: fixed; */
+    /* background-color: lightslategray; */
+}
+
+.contentHeaderContainer{
+    display: flex;
+    height: 10vh;
+    width: calc(100% - 400px);
+    position: fixed;
+}
+
+.searchContainer{
+    width: 30%;
+    height: 10vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6e9ec;
+}
+
+.input{
+    height: 40%;
+    width: 80%;
+    background-image: url(./asset/sideUI/Search\ icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-style: solid;
+    border-color: #e5e8ee;
+}
+
+.toolbar{
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: #e6e9ec;
+}
+
+.toolbarLeft{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.greenCircle{
+    height: 10px;
+    width: 10px;
+    background-color: #1bb934;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.toolbarRight{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.toolbarRight span{
+    margin: 0 24px;
+}
+
+.verticalLine{
+    width: 1px;
+    height: 30px;
+    margin-left: 24px;
+}
+
+.toolbar button{
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: -4px;
+}
+
+#button1{
+    background-image: url(./asset/sideUI/User\ icon.png);
+}
+
+#button2{
+    background-image: url(./asset/sideUI/Upload\ icon.png);
+}
+
+#button3{
+    background-image: url(./asset/sideUI/Trash\ icon.png);
+}
+
+#button4{
+    background-image: url(./asset/sideUI/Arrow\ left.png);
+}
+
+#button5{
+    background-image: url(./asset/sideUI/Arrow\ right.png);
+}
+
+.contentBodyContainer{
+    display: flex;
+}
+
+.leftPart{
+    height: 80vh;
+    width: calc(100% + 17px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background-color: magenta; */
+}
+
+.smallBox{
+    height: 20vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid #e6e9ec 1px;
+    /* background-color: teal; */
+}
+
+.headMessage{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    align-self: center;
+}
+
+.headMessage img{
+    margin-right: 20px;
+}
+
+.headText{
+    display: flex;
+    flex-direction: column;
+}
+
+.blueCircle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    background-color: #1d93ed;
+}
+
+.rightPartContainer{
+    height: 80vh;
+    width: 70%;
+    overflow: hidden;
+}
+
+.rightPart{
+    height: 100%;
+    width: calc(100% + 17px);
+    background-color: rgb(17, 33, 121);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bigBox{
+    display: flex;
+    margin: 20px;
+}
+
+.bigBoxLeft{
+    height: 46px;
+    width: 46px;
+    background-image: url(./asset/sideUI/Face.png);
+    margin-right: 10px;
+}
+
+.bigBoxRight{
+    width: 100%;
+}
+
+.bigBoxRightHead{
+    margin-bottom: 10px;
+}
+
+.levelLine{
+    width: 100%;
+    text-align: center;
+    line-height: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.levelLineLeft{
+    height: 1px;
+    width: 45%;
+    background-color: #d9dde3;
+}
+
+.levelLineContent{
+    width: 10%;
+}
+
+.levelLineRight{
+    height: 1px;
+    width: 45%;
+    background-color: #d9dde3;
+}
+
